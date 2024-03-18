@@ -57,9 +57,4 @@ This project is licensed under the **MIT License** - feel free to use it, modify
 ## Acknowledgments
 
 - Thanks to the amazing Vite, React, SCSS, and Framer Motion communities for their fantastic tools and libraries!
-
----
-
-Feel free to customize this readme according to your project specifics. Happy coding! 🚀🌟
-
----
+Happy coding! 🚀🌟
