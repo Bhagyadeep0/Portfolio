@@ -1,66 +1,66 @@
-.project{
+.project {
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+  position: relative;
+  .textContainer {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    p {
+      top: 0;
+      right: 0;
+      font-size: 20px;
+    }
+    hr {
+      border: 0.5px solid gray;
+      width: 20em;
+    }
+  }
+  .wrapper {
     height: 100%;
-    background-color: cadetblue;
-    position: relative;
-    .textContainer{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        p{
-            top: 0;
-            right: 0;
-            font-size: 20px;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+    .titleContainer {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .imgContainer {
+        flex: 1;
+        height: 50%;
+        img {
+          height: 300px;
+          object-fit: cover;
+          transform: rotate(-90deg);
+          border-radius: 50px 50px 20px 0;
         }
-        hr{
-            border: 0.5px solid gray ;
-            width: 20em;
+        .title {
+          flex: 1;
+          h1 {
+            font-weight: 800;
+            font-size: 50px;
+          }
         }
+      }
     }
-    .wrapper{
-        height: 100%;
-        max-width: 1400px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        justify-content: space-between;
-        align-items: center;
- 
-        .titleContainer{
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            .imgContainer{
-                flex: 1;
-                height: 50%;
-                img{
-                    height: 300px;
-                    object-fit: cover;
-                    transform: rotate(-90deg);
-                    border-radius: 50px 50px 20px 0;
-                }
-            .title{
-                flex: 1;
-                h1{
-                    font-weight: 800;
-                    font-size: 50px;
-                }
-                }
-            }
-        }
-        .boxContainer{
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .box{
-                border: 0.5px solid gray;
-                padding: 10px 20px;
-            }
-        }
+    .boxContainer {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .box {
+        border: 0.5px solid gray;
+        padding: 10px 20px;
+      }
     }
+  }
 }
