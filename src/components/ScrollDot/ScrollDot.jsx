@@ -1,12 +1,13 @@
 import './scrollDot.scss'
+import {motion} from "framer-motion";
 
 const ScrollDot = () => {
     const urls = ["Home", "About", "Projects", "Contact"];
   return (
     <div className='scrollDot'>
        {urls.map((url) => (
-          <a href={`#${url}`} key={url}>
-          </a>
+          <motion.a whileHover={{background:"pink"}} href={`#${url}`} key={url}>
+          </motion.a>
         ))}
     </div>
   )
