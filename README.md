@@ -20,13 +20,13 @@ This project is a dynamic website built using **Vite**, **React**, **SCSS**, and
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-awesome-website.git
+    git clone https://github.com/Bhagyadeep0/Portfolio.git
     ```
 
 2. Install dependencies:
 
     ```bash
-    cd your-awesome-website
+    cd Portfolio
     npm install
     ```
 
