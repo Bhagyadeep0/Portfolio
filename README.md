@@ -1,8 +1,8 @@
-Certainly! Creating a **readme** for your website project using **Vite**, **React**, **SCSS**, and **Framer Motion** is essential to provide clear instructions for other developers who might want to contribute or use your project. Let's get started:
+
 
 # Project Name
 
-**Your Awesome Website**
+**Bhagyadeep || Portfolio**
 
 ## Description
 
@@ -38,7 +38,7 @@ This project is a dynamic website built using **Vite**, **React**, **SCSS**, and
     npm run dev
     ```
 
-2. Open your browser and navigate to `http://localhost:3000`.
+2. Open your browser and navigate to `http://localhost:5173`.
 
 ## Contributing
 
@@ -63,13 +63,3 @@ This project is licensed under the **MIT License** - feel free to use it, modify
 Feel free to customize this readme according to your project specifics. Happy coding! 🚀🌟
 
 ---
-
-**References:**
-1. [Framer Motion Documentation](https://www.framer.com/motion/) ¹
-2. [Tutorial: Create a Website Using React and Framer Motion](https://lanars.com/blog/react-vikings-history-part-2) ²
-
-Source: Conversation with Bing, 18/03/2024
-(1) Documentation | Framer for Developers. https://www.framer.com/motion/.
-(2) How to Create a Website Using React and Framer Motion: Complete .... https://lanars.com/blog/react-vikings-history-part-2.
-(3) How to Create a Website Using React and Framer Motion: Complete .... https://lanars.com/blog/react-vikings-history-part-1.
-(4) framer-motion · GitHub Topics · GitHub. https://github.com/topics/framer-motion.
