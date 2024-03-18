@@ -40,20 +40,6 @@ This project is a dynamic website built using **Vite**, **React**, **SCSS**, and
 
 2. Open your browser and navigate to `http://localhost:5173`.
 
-## Contributing
-
-Contributions are welcome! If you'd like to add new features, fix bugs, or improve existing code, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/my-feature`.
-3. Commit your changes: `git commit -m "Add my feature"`.
-4. Push to the branch: `git push origin feature/my-feature`.
-5. Create a pull request.
-
-## License
-
-This project is licensed under the **MIT License** - feel free to use it, modify it, and share it with others.
-
 ## Acknowledgments
 
 - Thanks to the amazing Vite, React, SCSS, and Framer Motion communities for their fantastic tools and libraries!
