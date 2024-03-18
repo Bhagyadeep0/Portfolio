@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
    .textContainer{
     flex: 1;
     h2{
@@ -14,14 +15,18 @@
         margin-bottom: 10px;
     }
     h1{
-        font-size: 80px;
+        font-size: 70px;
         color: #fff;
         margin-bottom: 10px;
+        b{
+            font-weight: 600;
+        }
     }
     button{
         background: none;
         padding: 10px 30px;
         margin-top: 10px;
+        margin-right: 20px;
         border: 0.5px solid gray;
         border-radius: none;
         cursor: pointer;
