@@ -1,0 +1,16 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    padding: 10px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    h1{
+        font-size: 35px;
+        font-weight: 800;
+    }
+
+}

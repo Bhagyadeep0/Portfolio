@@ -1,0 +1,16 @@
+.scrollDot{
+    position: fixed;
+    bottom: 450px;
+    right: 100px;
+    z-index: 999;
+
+    a{
+        display: block;
+        background: #fff;
+        width: 15px;
+        height: 15px;
+        margin: 20px 0;
+        border-radius: 50%;
+        cursor: pointer
+    }
+}
