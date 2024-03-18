@@ -1,46 +1,52 @@
 .hero{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
     background-color: #00a6ac;
-   .textContainer{
-    flex: 1;
-    h2{
-        font-size: 50px;
-        font-weight: 800;
-        color: #fff;
-        margin-bottom: 10px;
-    }
-    h1{
-        font-size: 70px;
-        color: #fff;
-        margin-bottom: 10px;
-        b{
-            font-weight: 600;
-        }
-    }
-    button{
-        background: none;
-        padding: 10px 30px;
-        margin-top: 10px;
-        margin-right: 20px;
-        border: 0.5px solid gray;
-        border-radius: none;
-        cursor: pointer;
-        font-size: 20px;
-        color: #fff;
-    }
-   }
-   .imgContainer{
-    flex: 1;
-    img{
-        width: 100%;
+    .wrapper{
         height: 100%;
-        object-fit: cover;
+        max-width: 1400px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        .textContainer{
+            flex: 1;
+            h2{
+                font-size: 50px;
+                font-weight: 800;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+            h1{
+                font-size: 70px;
+                color: #fff;
+                margin-bottom: 10px;
+                b{
+                    font-weight: 600;
+                }
+            }
+            button{
+                background: none;
+                padding: 10px 30px;
+                margin-top: 10px;
+                margin-right: 20px;
+                border: 0.5px solid gray;
+                border-radius: none;
+                cursor: pointer;
+                font-size: 20px;
+                color: #fff;
+            }
+           }
+           .imgContainer{
+            flex: 1;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                scale: 1.2;
+            }
+           }
     }
-   }
 }

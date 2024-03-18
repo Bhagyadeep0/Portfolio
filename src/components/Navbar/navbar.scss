@@ -1,16 +1,17 @@
 .navbar{
-    position: fixed;
-    top: 0;
+    position: absolute;
     width: 100%;
-    max-width: 1366px;
-    margin: auto;
-    padding: 10px 30px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    h1{
-        font-size: 35px;
-        font-weight: 800;
+    .wrapper{
+        max-width: 1400px;
+        margin:10px auto;
+        padding: 10px 30px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            font-size: 35px;
+            font-weight: 800;
+        }
     }
 
 }
