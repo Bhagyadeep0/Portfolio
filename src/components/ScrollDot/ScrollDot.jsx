@@ -1,16 +1,30 @@
-import './scrollDot.scss'
-import {motion} from "framer-motion";
+import "./scrollDot.scss";
+import {
+  AiFillHome,
+  AiFillBook,
+  AiFillProject,
+  AiFillContacts,
+} from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const ScrollDot = () => {
-    const urls = ["Home", "About", "Projects", "Contact"];
+  const urls = [
+    { id: 1, path: "Home", icon: <AiFillHome /> },
+    { id: 2, path: "About", icon: <AiFillBook /> },
+    { id: 2, path: "Projects", icon: <AiFillProject /> },
+    { id: 2, path: "Contact", icon: <AiFillContacts /> },
+  ];
   return (
-    <div className='scrollDot'>
-       {urls.map((url) => (
-          <motion.a whileHover={{background:"pink"}} href={`#${url}`} key={url}>
-          </motion.a>
-        ))}
+    <div className="scrollDot">
+      {urls.map((url) => (
+        <motion.a
+          whileHover={{ color: "pink" }}
+          href={`#${url.path}`}
+          key={url.id}
+        >{url.icon}</motion.a>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default ScrollDot
+export default ScrollDot;

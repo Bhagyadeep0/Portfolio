@@ -1,15 +1,25 @@
 .scrollDot{
     position: fixed;
-    bottom: 450px;
-    right: 100px;
+    bottom: 300px;
+    right: 50px;
     z-index: 999;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
 
     a{
-        display: block;
-        background: #fff;
-        width: 15px;
-        height: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 20px 0;
+        font-size: 30px;
+        padding: 10px;
+        background: #eaeaea;
         border-radius: 50%;
+    }
+    a:focus{
+        background-color: red;
     }
 }
