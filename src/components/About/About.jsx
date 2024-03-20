@@ -13,7 +13,7 @@ const About = () => {
           <h2>Title</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, reprehenderit!</p>
         </div>
-        {/* <SliderText /> */}
+        <SliderText />
       </div>
       </div>
     </div>

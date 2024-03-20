@@ -56,3 +56,9 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 550px){
+    .sidebar{
+        display: flex;
+    }
+}

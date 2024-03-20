@@ -5,6 +5,8 @@ import {
   AiFillGithub,
   AiFillBehanceCircle,
 } from "react-icons/ai";
+import { motion } from "framer-motion"; 
+import { linkItemVariants,linkVariants } from "../Item/Item";
 const Link = () => {
   const urls = [
     {
@@ -34,13 +36,13 @@ const Link = () => {
   ];
 
   return (
-    <ul className="links">
+    <motion.ul className="links" variants={linkVariants} >
       {urls.map((url) => (
-        <a href={`${url.url}`} key={url.id} target="_blank" className="urls">
+        <motion.a href={`${url.url}`} key={url.id} target="_blank" className="urls" variants={linkItemVariants} whileHover={{scale:1.2}} whileTap={{scale:0.9}}>
           {url.icon}
-        </a>
+        </motion.a>
       ))}
-    </ul>
+    </motion.ul>
   );
 };
 
