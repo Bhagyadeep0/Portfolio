@@ -4,7 +4,6 @@ import {
   AiFillTwitterSquare,
   AiFillGithub,
   AiFillBehanceCircle,
-
 } from "react-icons/ai";
 const Link = () => {
   const urls = [
@@ -35,9 +34,9 @@ const Link = () => {
   ];
 
   return (
-    <ul>
+    <ul className="links">
       {urls.map((url) => (
-        <a href={`${url.url}`} key={url.id} target="_blank">
+        <a href={`${url.url}`} key={url.id} target="_blank" className="urls">
           {url.icon}
         </a>
       ))}

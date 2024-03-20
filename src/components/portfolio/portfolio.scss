@@ -1,0 +1,77 @@
+.portfolio {
+  position: relative;
+  .progress {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #00012b;
+    text-align: center;
+    padding-top: 50px;
+    z-index: 1;
+    h1 {
+      font-size: 50px;
+      color: orange;
+    }
+    .progressBar {
+      margin: 10px auto;
+      height: 10px;
+      background-color: white;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1336px;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    .textContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-weight: 800;
+        font-size: 80px;
+        text-align: center;
+        color: orangeRed;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 22px;
+        font-weight: 300;
+        color: gray;
+      }
+      button {
+        margin-top: 20px;
+        border: none;
+        background-color: orange;
+        padding: 10px 30px;
+        font-size: 20px;
+        font-weight: 700;
+        width: 200px;
+        align-self: center;
+      }
+    }
+    .imageContainer {
+      flex: 1;
+      height: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

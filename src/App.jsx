@@ -5,12 +5,13 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/projects";
 import Contact from "./components/Contact/Contact";
 import ScrollDot from "./components/ScrollDot/ScrollDot";
-// import Sidebar from './components/Sidebar/Sidebar'
+import Sidebar from "./components/Sidebar/Sidebar";
 
 const App = () => {
   return (
-    <div className="wrapper">
+    <>
       <ScrollDot />
+        <Sidebar />
       <section id="Home">
       <Navbar />
         <Hero />
@@ -24,7 +25,7 @@ const App = () => {
       <section id="Contact">
         <Contact />
       </section>
-    </div>
+    </>
   );
 };
 

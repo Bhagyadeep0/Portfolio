@@ -1,0 +1,72 @@
+.contact {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .textContainer {
+    flex: 1;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 800;
+      color: orange;
+      margin-bottom: 10px;
+    }
+    .item {
+      margin-bottom: 20px;
+      h2 {
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .formContainer {
+    flex: 1;
+    position: relative;
+    .contactSvg{
+      stroke: orange;
+      stroke-width: 0.05px;
+      position: absolute;
+      margin: auto;
+      top: -200px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      ::placeholder{
+        color: orange;
+      }
+      input,textarea,button{
+        margin-bottom: 20px;
+        padding: 10px 30px;
+        border: 2px solid white;
+        outline: none;
+        font-weight: 500;
+        font-size: 20px;
+        border-radius: 20px 0 20px 0;
+        background: transparent;
+        color: white;
+      }
+      button{
+        border: none;
+        background-color: orange;
+        color: yellow;
+        cursor: pointer;
+      }
+      textarea{
+        resize: none;
+      }
+
+     
+    }
+  }
+}

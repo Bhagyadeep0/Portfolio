@@ -1,18 +1,21 @@
-import Link from '../Link/Link'
-import ToggleButton from './ToggleButton/ToggleButton'
-import './sidebar.scss'
+import "./sidebar.scss";
+import Link from "./Link/Link";
+import ToggleButton from "./ToggleButton/ToggleButton";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import {sidebarVariants} from '../Item/Item';
 
 const Sidebar = () => {
-  return (
-    <div>
-      <div>
-      <Link />
-    </div>
-    <div>
-      <ToggleButton />
-    </div>
-    </div>
-  )
-}
+  const [open, setOpen] = useState(false);
 
-export default Sidebar
+  return (
+    <motion.div className="sidebar" animate={open ? "open" : "close"}>
+      <motion.div className="bg" variants={sidebarVariants}>
+        <Link />
+      </motion.div>
+      <ToggleButton setOpen={setOpen} />
+    </motion.div>
+  );
+};
+
+export default Sidebar;

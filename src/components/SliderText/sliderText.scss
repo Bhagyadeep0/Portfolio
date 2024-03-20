@@ -1,0 +1,10 @@
+.slidingText{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    font-weight: bold;
+    font-size: 50vh;
+    white-space: noWrap;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.05);
+}

@@ -1,4 +1,5 @@
 
+import SliderText from '../SliderText/SliderText'
 import './about.scss'
 const About = () => {
   return (
@@ -12,6 +13,7 @@ const About = () => {
           <h2>Title</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, reprehenderit!</p>
         </div>
+        {/* <SliderText /> */}
       </div>
       </div>
     </div>

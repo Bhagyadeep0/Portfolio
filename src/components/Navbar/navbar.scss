@@ -1,18 +1,27 @@
-.navbar {
-  position: fixed;
-  height: 100px;
-  width: 100%;
-  color: #000;
-  .wrapper {
-    max-width: 1400px;
-    margin: 10px auto;
-    padding: 10px 30px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    h1 {
-      font-size: 35px;
-      font-weight: 800;
+.navbar{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    .wrapper{
+        max-width: 1336px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        span{
+            font-weight: bold;
+        }
+        .social{
+            display: flex;
+            gap: 1.5rem;
+            img{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
     }
-  }
 }

@@ -11,8 +11,8 @@ const ScrollDot = () => {
   const urls = [
     { id: 1, path: "Home", icon: <AiFillHome /> },
     { id: 2, path: "About", icon: <AiFillBook /> },
-    { id: 2, path: "Projects", icon: <AiFillProject /> },
-    { id: 2, path: "Contact", icon: <AiFillContacts /> },
+    { id: 3, path: "Projects", icon: <AiFillProject /> },
+    { id: 4, path: "Contact", icon: <AiFillContacts /> },
   ];
   return (
     <div className="scrollDot">
@@ -21,7 +21,9 @@ const ScrollDot = () => {
           whileHover={{ color: "pink" }}
           href={`#${url.path}`}
           key={url.id}
-        >{url.icon}</motion.a>
+        >
+          {url.icon}
+        </motion.a>
       ))}
     </div>
   );

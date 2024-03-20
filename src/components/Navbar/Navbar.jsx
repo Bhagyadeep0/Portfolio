@@ -1,17 +1,20 @@
-import Link from '../SocialLink/Link'
+import Sidebar from '../Sidebar/Sidebar'
 import './navbar.scss'
-
 
 const Navbar = () => {
   return (
-    <nav className='navbar'>
+    <div className='navbar'>
+      <Sidebar />     
       <div className="wrapper">
-      <div className="logo">
-            <img src='/logo.png' width= "70%" />
+        <span>Bhagyadeep</span>
+        <div className="social">
+          <a href="#"><img src="/facebook.png" alt="facebook" /></a>
+          <a href="#"><img src="/instagram.png" alt="instagram" /></a>
+          <a href="#"><img src="/twitter.png" alt="twitter" /></a>
+          <a href="#"><img src="/behance.png" alt="behance" /></a>
         </div>
-        <Link />
       </div>
-    </nav>
+    </div>
   )
 }
 
