@@ -8,8 +8,9 @@ const Contact = () => {
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
-    <motion.div
-      className="contact"
+  <div className="contact">
+      <motion.div
+      className="wrapper"
       variants={contactVariants}
       initial="initial"
       ref={ref}
@@ -86,6 +87,7 @@ const Contact = () => {
         </motion.form>
       </motion.div>
     </motion.div>
+  </div>
   );
 };
 

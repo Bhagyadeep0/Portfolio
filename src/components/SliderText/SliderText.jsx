@@ -1,6 +1,5 @@
 import {motion} from 'framer-motion';
 import { sliderVariants } from '../Item/Item';
-import "./sliderText.scss"
 
 const SliderText = () => {
   return (

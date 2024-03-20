@@ -1,11 +1,11 @@
-.portfolio {
+.project {
   position: relative;
   .progress {
     position: sticky;
     width: 100%;
     top: 0;
     left: 0;
-    background: #00012b;
+    // background: #00012b; 
     text-align: center;
     padding-top: 50px;
     z-index: 1;
@@ -28,6 +28,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
   .wrapper {
     display: flex;
     flex-wrap: wrap;
