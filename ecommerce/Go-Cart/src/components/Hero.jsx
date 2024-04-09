@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="py-10 px-5 bg-gray-800/10">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-[50px] container m-auto">
-        {/* text images */}
+        {/* text,buttons,box */}
         <div className="flex-1">
           <div className="space-y-5">
           {/* text */}
