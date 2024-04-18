@@ -8,6 +8,9 @@
 
 This project is a dynamic website built using **Vite**, **React**, **TailwindCSS**, and **Framer Motion**. It showcases smooth animations, interactive components, and a visually appealing design.
 
+## Live Link : https://bhagayadeep.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f9734b6-4e9b-4546-a406-554e4128e1fa/deploy-status)](https://app.netlify.com/sites/bhagayadeep/deploys)
+
 ## Features
 
 - **Responsive Design**: The website adapts seamlessly to different screen sizes.
