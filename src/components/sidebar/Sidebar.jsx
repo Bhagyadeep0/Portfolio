@@ -1,6 +1,6 @@
 
 import Link from "../Links";
-import ToggleButton from "./toggleButton/ToggleButton";
+import ToggleButton from "./ToggleButton/ToggleButton"
 import { useState } from "react";
 import { motion } from "framer-motion";
 
