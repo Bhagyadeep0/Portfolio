@@ -1,10 +1,10 @@
-/* eslint-disable react/prop-types */
+
 import {motion} from "framer-motion";
 
 
 const ToggleButton = ({ setOpen }) => {
   return (
-    <button onClick={() => setOpen((event) => !event)} className=" p-5 rounded-ee-full absolute -left-1 top-0 z-50 outline-none border-none">
+    <button onClick={() => setOpen((event) => !event)} className=" p-5 rounded-ee-full absolute -left-1 top-0 z-[999] outline-none border-none">
       <motion.svg width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         <motion.path 
         variants={{

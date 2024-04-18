@@ -7,9 +7,9 @@ import { fadeIn } from "./Variants";
 
 const About = () => {
   const aboutData = [
-    { icon: <BsTextRight />, title: "Experience", year: "1 year" },
-    { icon: <BsTextRight />, title: "Experience", year: "1 year" },
-    { icon: <BsTextRight />, title: "Experience", year: "1 year" },
+    { icon: <BsTextRight />, title: "Graphic Design", year: "2 year" },
+    { icon: <BsTextRight />, title: "Frontend", year: "1 year" },
+    { icon: <BsTextRight />, title: "UI/UX", year: "1 year" },
   ];
 
   return (
@@ -33,18 +33,18 @@ const About = () => {
         </motion.div>
 
         {/* text,box */}
-        <motion.div variants={fadeIn("scaleUp",0.3,1.2)} initial="hidden" whileInView="show" className="flex-1 flex flex-col items-center lg:items-start max-w-[550px]">
+        <motion.div variants={fadeIn("scaleUp",0.3,1.2)} initial="hidden" whileInView="show" className="flex-1 flex flex-col items-center lg:items-start max-w-[650px]">
           {/* box */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-y-5 gap-x-20 mb-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-y-5 gap-x-2 mb-5">
             {aboutData.map((item, index) => (
               <div
-                className=" bg-white/60 w-fit p-2 rounded-xl flex flex-col items-center gap-2"
+                className=" bg-white/60 h-full p-2 rounded-xl flex flex-col items-center gap-2"
                 key={index}
               >
-                <p className="bg-black text-white text-xl rounded-full w-fit p-[6px]">
+                <p className="bg-black text-white  text-xl rounded-full p-[6px]">
                   {item.icon}
                 </p>
-                <p className="text-2xl font-[600]">{item.title}</p>
+                <p className="text-2xl text-center font-[600] break-words">{item.title}</p>
                 <p className="p">{item.year}</p>
               </div>
             ))}

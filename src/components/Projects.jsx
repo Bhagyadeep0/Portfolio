@@ -35,7 +35,7 @@ const Projects = () => {
         {
           id: 1,
           title: "E-sport Design",
-          img: "/levi.png",
+          img: "/sage.png",
           url: "https://www.behance.net/bhagyadeep_ghosh",
         },
         {
@@ -47,7 +47,7 @@ const Projects = () => {
         {
           id: 2,
           title: "Thumbnail Design",
-          img: "/levi.png",
+          img: "/smoke.png",
           url: "https://www.behance.net/bhagyadeep_ghosh",
         },
       ],
@@ -87,7 +87,7 @@ const Projects = () => {
           </motion.p>
         </div>
         {/* data */}
-        <div className="flex-1 flex flex-col items-center justify-center gap-5 w-full h-full max-w-[550px]">
+        <div className="flex-1 flex flex-col items-center justify-center gap-5 w-full h-full max-w-[650px]">
           <div className=" flex w-full items-center justify-between px-2 ">
             {/* title */}
             {workData.map((item, itemIndex) => (
@@ -102,23 +102,26 @@ const Projects = () => {
               </div>
             ))}
           </div>
-          <motion.div variants={fadeIn("left",0.3,1.5)} initial="hidden" whileInView="show" className="shadow-md w-4/5 bg-white/20 rounded-xl">
+          <motion.div variants={fadeIn("left",0.3,1.5)} initial="hidden" whileInView="show" className="shadow-md w-full bg-white/20 rounded-xl">
             {workData[index].info.map((item, itemIndex) => (
               <div
-                className="transition-all duration-300 ease-in flex gap-10 items-center py-2 px-4"
+                className="transition-all duration-300 ease-in flex justify-between gap-5 text-center items-center py-2 px-4"
                 key={itemIndex}
               >
                 <p className="text-xl font-[600] flex-1">{item.title}</p>
-                <p className="text-xl font-[600] flex-1">
-                  <a href={item.url} target="_blank" className="group">
-                    <span>Show ME</span>
-                    <span className="absolute top-0 left-0">
+                <p className="text-xl font-[600] flex-1 group">
+                    <span className="hover:text-value5 transition-all duration-300 ease-in cursor-pointer">Show ME</span>
+                    <div className="absolute w-[600px] h-full top-0 left-0 ">
                       <img
                         src={item.img}
                         alt=""
-                        className="w-[600px] rounded-xl hidden group-hover:flex"
+                        className="object-cover w-full h-full rounded-xl hidden group-hover:flex "
                       />
-                    </span>
+                    </div>
+                </p>
+                <p className="text-xl font-[600] flex-1 ">
+                  <a href={item.url} target="_blank" className="hover:text-value5 transition-all duration-300 ease-in">
+                    <span>Checkout</span>
                   </a>
                 </p>
               </div>

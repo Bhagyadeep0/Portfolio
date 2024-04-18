@@ -93,7 +93,7 @@ const Contact = () => {
           <p className="p">mail: b.ghosh0330@gmail.com</p>
         </div>
 
-        <div className="flex-1 flex flex-col items-center max-w-[550px]">
+        <div className="flex-1 flex flex-col items-center max-w-[650px]">
           <motion.form
           variants={fadeIn("up",0.3,1.2)}
           initial="hidden"
