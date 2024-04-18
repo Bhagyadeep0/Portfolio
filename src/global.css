@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply m-0 p-0 box-border font-satoshi scroll-smooth ;
+    }
+    /* *{
+        @apply outline ;
+    } */
+
+    body {
+        @apply  bg-gray-200;
+    }
+    section{
+        @apply pt-[120px] pb-10 overflow-hidden;
+    }
+    .h1 {
+        @apply text-primary text-[32px] md:text-[50px] leading-none mb-5 font-black;
+    }
+    .h2 {
+        @apply text-secondary text-[45px] leading-none mb-5 font-bold;
+    }
+    .p {
+        @apply text-tertiary text-[20px] md:text-[22px] lg:text-[25px] leading-7 font-medium;
+    }
+
+    .btn {
+        @apply px-3 py-1 text-2xl font-bold border border-transparent text-white bg-primary hover:bg-transparent hover:text-primary hover:border-primary transition-all duration-300 ease-in rounded-full my-5 cursor-pointer;
+    }
+    label{
+        @apply text-lg font-[500];
+    }
+    input,textarea{
+        @apply text-xl font-[600] bg-transparent  outline-none rounded-xl transition-all duration-300 ease-in;
+    }
+    hr{
+        @apply bg-primary w-full h-1 mt-5;
+    }
+}
+
+.wave-bottom {
+    --mask:
+        radial-gradient(44.72px at 50% calc(100% - 60px), #000 99%, #0000 101%) calc(50% - 40px) 0/80px 100%,
+        radial-gradient(44.72px at 50% calc(100% + 40px), #0000 99%, #000 101%) 50% calc(100% - 20px)/80px 100% repeat-x;
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+        
+}
+
+.cut-bottom {
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 60px))
+  }

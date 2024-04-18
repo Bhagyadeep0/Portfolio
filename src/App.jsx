@@ -1,33 +1,20 @@
-import "./App.scss";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import About from "./components/About/About";
-import Projects from "./components/Project/Project";
-import Contact from "./components/Contact/Contact";
-import ScrollDot from "./components/ScrollDot/ScrollDot";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Particale from "./components/Particle/Particale";
+import "./global.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import ToTop from "./components/ToTop";
 
 const App = () => {
   return (
-    <>
-      <ScrollDot />
-        <Sidebar />
-      <section id="Home">
-      <Navbar /> 
-        <Particale />
-        <Hero />
-      </section>
-      <section id="About">
-        <Projects />
-        <About />
-      </section>
-      <section id="Projects">
-      </section>
-      <section id="Contact">
-        <Contact />
-      </section>
-    </>
+    <div>
+      <Navbar /> <Hero />
+      <About />
+      <Projects />
+      <Contact />
+      <ToTop />
+    </div>
   );
 };
 
