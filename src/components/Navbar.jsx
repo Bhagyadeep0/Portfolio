@@ -9,7 +9,6 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa6";
-import Links from "./Links";
 
 const Navbar = () => {
   const navbarData = [
