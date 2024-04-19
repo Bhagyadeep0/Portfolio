@@ -54,6 +54,8 @@ const Projects = () => {
     },
   ];
   const [index, setIndex] = useState(0);
+  const [hoverIndex, setHoverIndex] = useState(0);
+  const [isHover,setIsHover] = useState(false);
 
   return (
     <section id="project" className="space-y-20 container mx-auto">
@@ -109,15 +111,15 @@ const Projects = () => {
                 key={itemIndex}
               >
                 <p className="text-xl font-[600] flex-1">{item.title}</p>
-                <p className="text-xl font-[600] flex-1 group">
-                    <span className="hover:text-value5 transition-all duration-300 ease-in cursor-pointer">Show ME</span>
-                    <div className="absolute w-[600px] h-full top-0 left-0 ">
+                <p className="text-xl font-[600] flex-1">
+                    <span onMouseEnter={()=> {setIsHover(true),setHoverIndex(itemIndex)}} onMouseLeave={()=>{setIsHover(false),setHoverIndex(itemIndex)}} className="hover:text-value5 transition-all duration-300 ease-in cursor-pointer">Show ME</span>
+                    {isHover&&<div className="absolute w-[600px] h-full top-0 left-0 ">
                       <img
                         src={item.img}
                         alt=""
-                        className="object-cover w-full h-full rounded-xl hidden group-hover:flex "
+                        className={`object-cover w-full h-full rounded-xl ${isHover && hoverIndex === itemIndex ? "visible": "hidden"} `}
                       />
-                    </div>
+                    </div>}
                 </p>
                 <p className="text-xl font-[600] flex-1 ">
                   <a href={item.url} target="_blank" className="hover:text-value5 transition-all duration-300 ease-in">

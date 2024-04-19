@@ -40,7 +40,7 @@ const Hero = () => {
                 alt="projects"
                 className="animate-spin max-w-[141px] max-h-[148px]"
               />
-              <BsArrowRight className="absolute text-4xl group-hover:rotate-90 transition-all duration-300" />
+              <BsArrowRight className="absolute animate-none text-4xl group-hover:rotate-90 transition-all duration-300" />
             </a>
           </div>
         </motion.div>

@@ -36,7 +36,7 @@ const Sidebar = () => {
       <motion.div className="absolute top-0 h-screen w-screen md:w-[500px] flex bg-value5 justify-center items-center transition-all duration-300 ease-out" variants={variants} >
         <Link />
       </motion.div>
-      <ToggleButton setOpen={setOpen} />
+      <ToggleButton setOpen={setOpen} open={open}/>
     </motion.nav>
   );
 };
