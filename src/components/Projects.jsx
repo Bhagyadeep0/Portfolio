@@ -95,7 +95,7 @@ const Projects = () => {
             {workData.map((item, itemIndex) => (
               <div
                 className={`${
-                  index === itemIndex && "text-red-600 underline"
+                  index === itemIndex && "text-value4 underline"
                 } text-[30px] cursor-pointer transition-all duration-300 ease-in`}
                 key={itemIndex}
                 onClick={() => setIndex(itemIndex)}

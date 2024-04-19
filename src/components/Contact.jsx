@@ -138,10 +138,10 @@ const Contact = () => {
                 value={formValue.name}
                 onChange={handleChange}
                 className={`w-full  border rounded-md focus:outline-none ${
-                  formError.name ? "border-red-500" : "border-blue-300"
+                  formError.name ? "border-red-500" : "border-value4"
                 }`}
               />
-              {formError.name && <p>{formError.name}</p>}
+              {formError.name && <p className="text-red-500 capitalize">{formError.name}</p>}
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="email">Email</label>
@@ -152,10 +152,10 @@ const Contact = () => {
                 value={formValue.email}
                 onChange={handleChange}
                 className={`w-full border rounded-md focus:outline-none ${
-                  formError.email ? "border-red-500" : "border-blue-300"
+                  formError.email ? "border-red-500" : "border-value4"
                 }`}
               />
-              {formError.email && <p>{formError.email}</p>}
+              {formError.email && <p className="text-red-500 capitalize">{formError.email}</p>}
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="subject">Subject</label>
@@ -166,10 +166,10 @@ const Contact = () => {
                 value={formValue.subject}
                 onChange={handleChange}
                 className={`w-full border rounded-md focus:outline-none ${
-                  formError.subject ? "border-red-500" : "border-blue-300"
+                  formError.subject ? "border-red-500" : "border-value4"
                 }`}
               />
-              {formError.subject && <p>{formError.subject}</p>}
+              {formError.subject && <p className="text-red-500 capitalize">{formError.subject}</p>}
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="message">Message</label>
@@ -181,10 +181,10 @@ const Contact = () => {
                 value={formValue.message}
                 onChange={handleChange}
                 className={`w-full  border rounded-md focus:outline-none ${
-                  formError.message ? "border-red-500" : "border-blue-300"
+                  formError.message ? "border-red-500" : "border-value4"
                 }`}
               />
-              {formError.message && <p>{formError.message}</p>}
+              {formError.message && <p className="text-red-500 capitalize">{formError.message}</p>}
             </div>
             <div className="text-center lg:text-start">
               <button type="submit" className="btn">
