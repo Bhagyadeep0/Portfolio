@@ -82,9 +82,9 @@ const Projects = () => {
             <SiJavascript className="hover:text-yellow-500 transition-all duration-300 ease-in" />{" "}
             <SiTailwindcss className="hover:text-blue-800 transition-all duration-300 ease-in" />{" "}
             <SiBootstrap className="hover:text-purple-700 transition-all duration-300 ease-in" />{" "}
-            <SiFigma />{" "}
             <SiWordpress className="hover:text-slate-700 transition-all duration-300 ease-in" />{" "}
-            <SiAdobephotoshop className="hover:text-blue-950 transition-all duration-300 ease-in" />{" "}
+            <SiFigma />{" "}
+            <SiAdobephotoshop className="hover:text-blue-900 transition-all duration-300 ease-in" />{" "}
             <SiPython />{" "}
           </motion.p>
         </div>
@@ -113,7 +113,7 @@ const Projects = () => {
                 <p className="text-xl font-[600] flex-1">{item.title}</p>
                 <p className="text-xl font-[600] flex-1">
                     <span onMouseEnter={()=> {setIsHover(true),setHoverIndex(itemIndex)}} onMouseLeave={()=>{setIsHover(false),setHoverIndex(itemIndex)}} className="hover:text-value5 transition-all duration-300 ease-in cursor-pointer">Show ME</span>
-                    {isHover&&<div className="absolute w-[600px] h-full top-0 left-0 ">
+                    {isHover&&<div className="absolute w-[600px] h-full top-0 left-0">
                       <img
                         src={item.img}
                         alt=""
