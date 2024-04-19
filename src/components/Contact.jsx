@@ -4,16 +4,19 @@ import { BsSend } from "react-icons/bs";
 import { motion } from "framer-motion";
 //variants
 import { fadeIn } from "./Variants";
-import { useState } from "react";
+import { useState, useRef } from "react";
+// emailJs
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formValue, setFormValue] = useState({
     name: "",
     email: "",
     subject: "",
-    textarea: "",
+    message: "",
   });
   const [formError, setFormError] = useState({});
+  const form_ref = useRef();
 
   //custom error message
   const validation = (name, value) => {
@@ -47,7 +50,7 @@ const Contact = () => {
           return "subject is too long, must be within 20 characters";
         }
         break;
-      case "msg":
+      case "message":
         if (!value) {
           return "Message is required";
         }
@@ -69,18 +72,42 @@ const Contact = () => {
       const error = validation(key, formValue[key]);
       if (error) {
         newErrors[key] = error;
+
+        // formValue[key] = ""
       }
     });
     setFormError(newErrors);
     if (Object.keys(newErrors).length === 0) {
-      console.log("Form data submitted:", formValue);
       // Submit form logic
+      // emailJS
+      emailjs
+        .sendForm("service_pr388ef", "template_bso4r6n", form_ref.current, {
+          publicKey: "lYt7-a45PRv7wzwtF",
+        })
+        .then(
+          () => {
+            alert("Message Send Successfully!");
+          },
+          (error) => {
+            alert("Oops Something went wrong!");
+            console.log("Error...", error.text);
+          }
+        );
     }
+    setFormValue({ name: "", email: "", subject: "", message: "" });
   };
   return (
-    <section id="contact" className="pt-[100px] space-y-10 container mx-auto z-50">
+    <section
+      id="contact"
+      className="pt-[100px] space-y-10 container mx-auto z-50"
+    >
       {/* title */}
-      <motion.div  variants={fadeIn("scaleUp",0.3,1.2)} initial="hidden" whileInView="show" className="text-center">
+      <motion.div
+        variants={fadeIn("scaleUp", 0.3, 1.2)}
+        initial="hidden"
+        whileInView="show"
+        className="text-center"
+      >
         <h1 className="h1">
           Contact Me <hr className="bg-black w-full h-1" />
         </h1>
@@ -95,9 +122,10 @@ const Contact = () => {
 
         <div className="flex-1 flex flex-col items-center max-w-[650px]">
           <motion.form
-          variants={fadeIn("up",0.3,1.2)}
-          initial="hidden"
-          whileInView="show"
+            ref={form_ref}
+            variants={fadeIn("up", 0.3, 1.2)}
+            initial="hidden"
+            whileInView="show"
             onSubmit={handleSubmit}
             className="space-y-5 shadow-md py-2 px-3 rounded-xl w-full"
           >
@@ -144,19 +172,19 @@ const Contact = () => {
               {formError.subject && <p>{formError.subject}</p>}
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="msg">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea
-                type="textarea"
-                name="msg"
-                id="msg"
+                type="message"
+                name="message"
+                id="message"
                 rows={8}
-                value={formValue.msg}
+                value={formValue.message}
                 onChange={handleChange}
                 className={`w-full  border rounded-md focus:outline-none ${
-                  formError.msg ? "border-red-500" : "border-blue-300"
+                  formError.message ? "border-red-500" : "border-blue-300"
                 }`}
               />
-              {formError.msg && <p>{formError.msg}</p>}
+              {formError.message && <p>{formError.message}</p>}
             </div>
             <div className="text-center lg:text-start">
               <button type="submit" className="btn">
