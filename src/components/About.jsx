@@ -26,9 +26,7 @@ const About = () => {
 
         <motion.div variants={fadeIn("right",0.3,1.2)} initial="hidden" whileInView="show" className=" flex justify-center items-center h-[500px]">
         <img
-            src="/pic.jpg"
-            alt="pfp"
-            className="  rounded-xl object-cover content-center h-full "
+            className=" bg-pic bg-cover bg-no-repeat bg-center object-cover content-center w-[300px] h-[400px] lg:w-[400px] lg:h-[500px] shadow-inset animate-morphAnim"
           />
         </motion.div>
 

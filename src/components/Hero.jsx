@@ -7,7 +7,7 @@ import { fadeIn } from "./Variants";
 
 const Hero = () => {
   return (
-    <section id="home" className="w-full h-screen pt-[100px] px-[6px] cut-bottom bg-layered-waves1 bg-no-repeat bg-cover bg-center">
+    <section id="home" className="w-full h-screen pt-[100px] px-[6px] cut-bottom bg-layered-waves1  bg-no-repeat bg-cover bg-center ">
       <div className="flex flex-col lg:flex-row gap-10 justify-between items-center border border-transparent w-full h-full rounded-2xl  container mx-auto">
         {/* text, btn, circle */}
         <motion.div
@@ -51,7 +51,7 @@ const Hero = () => {
           initial="hidden"
           whileInView="show"
         >
-          <img src="/avatar.png" alt="avatar" className="object-cover  wave-bottom" />
+          <img src="/avatar.png" alt="avatar" className="object-cover  wave-bottom " />
         </motion.div>
       </div>
     </section>
