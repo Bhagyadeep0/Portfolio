@@ -27,6 +27,16 @@ const Projects = () => {
           img: "/gocart.png",
           url: "https://gocart-bg.netlify.app/",
         },
+        {
+          title: "Weather App",
+          img: "/weather.png",
+          url: "https://bhagyadeep0.github.io/Basic-Weather-App/",
+        },
+        {
+          title: "Joke App",
+          img: "/jokeApp.png",
+          url: "https://bhagyadeep0.github.io/Joke-App/",
+        },
       ],
     },
     {
