@@ -7,7 +7,8 @@ import { fadeIn } from "./Variants";
 
 const Hero = () => {
   return (
-    <section id="home" className="w-full h-screen pt-[100px] px-[6px] cut-bottom bg-layered-waves1  bg-no-repeat bg-cover bg-center ">
+    <section id="home" className="w-full h-screen pt-[100px] px-[6px] cut-bottom bg-waves1  bg-no-repeat bg-cover bg-center relative">
+      <div className="absolute w-full h-full top-0 left-0 xl:z-10 bg-waves2 bg-cover bg-no-repeat bg-center pointer-events-none"></div>
       <div className="flex flex-col lg:flex-row gap-10 justify-between items-center border border-transparent w-full h-full rounded-2xl  container mx-auto">
         {/* text, btn, circle */}
         <motion.div
@@ -40,18 +41,18 @@ const Hero = () => {
                 alt="projects"
                 className="animate-spin max-w-[141px] max-h-[148px]"
               />
-              <BsArrowRight className="absolute animate-none text-4xl group-hover:rotate-90 transition-all duration-300" />
+              <BsArrowRight className="absolute text-4xl group-hover:rotate-90 transition-all duration-300" />
             </a>
           </div>
         </motion.div>
         {/* image */}
         <motion.div
-          className="relative hidden md:flex md:flex-1 w-1/2 content-center"
+          className=" hidden md:flex md:flex-1 w-1/2 content-center"
           variants={fadeIn("up", 0.3, 1.3)}
           initial="hidden"
           whileInView="show"
         >
-          <img src="/avatar.png" alt="avatar" className="object-cover  wave-bottom " />
+          <img src="/avatar.png" alt="avatar" className="object-cover  wave-bottom" />
         </motion.div>
       </div>
     </section>

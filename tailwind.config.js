@@ -9,7 +9,8 @@ export default {
       backgroundImage:{
         "pic": "url(/pic.jpg)",
         "circle-star": "url(/src/assets/circle-star.svg)",
-        "layered-waves1": "url(/src/assets/layered-waves1.svg)",
+        "waves1": "url(/src/assets/waves1.svg)",
+        "waves2": "url(/src/assets/waves2.svg)",
       },
       //frames added
       keyframes: {
