@@ -14,6 +14,7 @@ const variants = {
       duration: 0.5,
     },
   },
+  
   close: {
     clipPath: "circle(75px at 0px 0px)",
     transition: {
