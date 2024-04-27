@@ -40,7 +40,7 @@ const Navbar = () => {
   ];
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisibility = () => {
-    window.scrollY > 200 ? setIsVisible(true) : setIsVisible(false);
+    window.scrollY > 50 ? setIsVisible(true) : setIsVisible(false);
   };
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
@@ -70,7 +70,7 @@ const Navbar = () => {
             >
               <span>{item.icon}</span>
               {/* tooltip */}
-              <div className=" relative hidden md:flex  opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+              <div className=" pointer-events-none relative hidden md:flex  opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
                 <span
                   className={`${
                     isVisible ? "bg-value5/50" : "bg-primary/10"
