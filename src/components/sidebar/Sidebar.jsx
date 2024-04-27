@@ -12,7 +12,6 @@ const variants = {
       stiffness: 80,
       damping: 20,
       duration: 0.5,
-      when: "beforeChildren",
     },
   },
   close: {
@@ -22,7 +21,6 @@ const variants = {
       stiffness: 80,
       damping: 20,
       duration: 0.5,
-      // when: "afterChildren",
     },
   },
 };
