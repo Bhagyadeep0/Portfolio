@@ -24,8 +24,8 @@ const Contact = () => {
       case "name":
         if (!value) {
           return "Name is required";
-        } else if (value.length > 20) {
-          return "Name is too long, must be within 20 characters";
+        } else if (value.length > 30) {
+          return "Name is too long, must be within 30 characters";
         }
         break;
       case "email":
@@ -35,19 +35,13 @@ const Contact = () => {
           return "Email is invalid";
         }
         break;
-      case "number":
-        if (!value) {
-          return "number is required";
-        } else if (value.length < 10 || value.length >= 11) {
-          return "number is too short, should be in 10 digit format";
-        }
       case "subject":
         if (!value) {
           return "subject is required";
         } else if (value.length < 5) {
           return "subject is too short, must be at least 5 characters";
-        } else if (value.length > 20) {
-          return "subject is too long, must be within 20 characters";
+        } else if (value.length > 200) {
+          return "subject is too long, must be within 200 characters";
         }
         break;
       case "message":
