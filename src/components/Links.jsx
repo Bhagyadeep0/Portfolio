@@ -26,14 +26,14 @@ const itemVariants ={
   },
 }
 
-const Links = () => {
+const Links = ({setOpen}) => {
   const links = ["home", "about", "project", "contact"];
 
   return (
     <>
     <motion.ul className="flex flex-col items-center gap-y-5" variants={variants} >
       {links.map((link) => (
-        <motion.a href={`#${link}`} key={link} variants ={itemVariants}>
+        <motion.a href={`#${link}`} key={link} variants ={itemVariants} onClick={() => setOpen((event) => !event)}>
           <li className="list-none text-primary text-[35px] hover:scale-110 transition-all duration-300 ease-in-out capitalize">{link}</li>
         </motion.a>
       ))}
