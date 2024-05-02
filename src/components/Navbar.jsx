@@ -53,8 +53,8 @@ const Navbar = () => {
     <header
       className={`fixed w-screen top-0 z-[999] transition-all duration-500 ease-in ${
         isVisible
-          ? "bg-primary/80 backdrop-blur-[6px] text-white"
-          : "bg-transparent text-primary"
+          ? "bg-primary/80 backdrop-blur-[6px] shadow-primary/50 shadow-md text-white"
+          : "bg-transparent text-primary "
       } `}
     >
       <Sidebar />
