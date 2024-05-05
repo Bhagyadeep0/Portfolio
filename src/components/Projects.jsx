@@ -37,6 +37,11 @@ const Projects = () => {
           img: "/jokeApp.png",
           url: "https://bhagyadeep0.github.io/Joke-App/",
         },
+        {
+          title: "Sketch App",
+          img: "/sketchApp.png",
+          url: "https://bhagyadeep0.github.io/sketch-app/",
+        },
       ],
     },
     {
