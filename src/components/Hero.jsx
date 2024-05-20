@@ -26,7 +26,7 @@ const Hero = () => {
               JavaScript, Bootstrap, Tailwind CSS , PhotoShop, Sass and
               WordPress.
             </p>
-            <div className="flex flex-wrap  gap-10 justify-around">
+            <div className="flex flex-wrap gap-y-0 gap-x-10 justify-around">
            <button className="btn"> <a href="#contact" className=" flex items-center gap-2"><span>Say, Hello</span> <span><BsSendFill/></span></a></button>
              <button className="btn"><a href="/Resume.pdf" className=" flex items-center w-full gap-2" download><span>Download CV</span><span> <BsDownload /></span></a></button>
             </div>
