@@ -1,5 +1,5 @@
 // icons
-import { BsArrowRight,BsSendFill } from "react-icons/bs";
+import { BsArrowRight,BsSendFill,BsDownload } from "react-icons/bs";
 //framer-motion
 import { motion } from "framer-motion";
 //variants
@@ -26,7 +26,10 @@ const Hero = () => {
               JavaScript, Bootstrap, Tailwind CSS , PhotoShop, Sass and
               WordPress.
             </p>
-            <a href="#contact"><button className="btn flex items-center gap-2"><span>Say, Hello</span> <span><BsSendFill/></span></button></a>
+            <div className="flex flex-wrap  gap-10 justify-around">
+           <button className="btn"> <a href="#contact" className=" flex items-center gap-2"><span>Say, Hello</span> <span><BsSendFill/></span></a></button>
+             <button className="btn"><a href="/Resume.pdf" className=" flex items-center w-full gap-2" download><span>Download CV</span><span> <BsDownload /></span></a></button>
+            </div>
           </div>
           {/* circle */}
           <div className=" self-center lg:self-start">

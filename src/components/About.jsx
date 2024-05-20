@@ -54,7 +54,7 @@ const About = () => {
               interface,i have export. Fronted developer, I create web pages with UI/Ux User
               interface
             </p>
-           <a href="/Resume.pdf" download> <button className="btn flex items-center w-fit"><span>Download CV</span><span> <BsDownload /></span></button></a>
+            <button className="btn"><a href="/Resume.pdf" className="flex items-center w-full gap-2" download><span>Download CV</span><span> <BsDownload /></span></a></button>
           </motion.div>
         </div>
     </section>
