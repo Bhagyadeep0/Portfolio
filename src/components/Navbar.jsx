@@ -59,8 +59,8 @@ const Navbar = () => {
     >
       <Sidebar />
       <div className="container flex items-center justify-center md:justify-between h-[100px]  mx-auto">
-        <div className="font-[600] text-xl hidden md:flex">Bhagyadeep</div>
-        <div className="flex gap-5 text-2xl">
+        <div className="font-[600] text-xl hidden md:block md:ml-[70px] xl:ml-0">Bhagyadeep</div>
+        <div className="flex gap-5 text-2xl md:mr-8 xl:mr-0">
           {navbarData.map((item, index) => (
             <a
               href={item.path}
