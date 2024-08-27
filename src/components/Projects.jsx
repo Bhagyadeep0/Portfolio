@@ -100,7 +100,7 @@ const Projects = () => {
             <SiWordpress className="hover:text-slate-700 transition-all duration-300 ease-in" />{" "}
             <SiFigma />{" "}
             <SiAdobephotoshop className="hover:text-blue-900 transition-all duration-300 ease-in" />{" "}
-            <SiCplusplus />{" "}
+            <SiCplusplus className="hover:text-blue-800 transition-all duration-300 ease-in" />{" "}
           </motion.p>
         </div>
         {/* data */}
