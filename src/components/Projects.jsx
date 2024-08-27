@@ -10,7 +10,7 @@ import {
   SiBootstrap,
   SiFigma,
   SiWordpress,
-  SiPython,
+  SiCplusplus,
 } from "react-icons/si";
 const Projects = () => {
   const workData = [
@@ -100,7 +100,7 @@ const Projects = () => {
             <SiWordpress className="hover:text-slate-700 transition-all duration-300 ease-in" />{" "}
             <SiFigma />{" "}
             <SiAdobephotoshop className="hover:text-blue-900 transition-all duration-300 ease-in" />{" "}
-            <SiPython />{" "}
+            <SiCplusplus />{" "}
           </motion.p>
         </div>
         {/* data */}
