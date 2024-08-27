@@ -137,7 +137,7 @@ const Projects = () => {
                     </div>}
                 </p>
                 <p className="text-xl font-[600] flex-1 ">
-                  <a href={item.url} target="_blank" className="hover:text-value5 transition-all duration-300 ease-in">
+                  <a href={item.url} target="_blank" rel="noreferrer" className="hover:text-value5 transition-all duration-300 ease-in">
                     <span>Checkout</span>
                   </a>
                 </p>
